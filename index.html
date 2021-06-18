@@ -1,64 +1,83 @@
 <!DOCTYPE html>
 <html>
-  <!--Style block that covers all styles that I will be using in my website -->
-  <style>
-    body {
-      background-image: url(https://ak.picdn.net/shutterstock/videos/1408948/thumb/1.jpg);
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-      align: middle;
-    }
-    .ggepfix {
-      width: 100%;
-      height: auto;
-      margin-left: auto;
-      margin-right: auto;
-      border: 3px solid black
-    }
-    .nfllfix {
-      width: 20%;
-      height: 90%;
-    }
-    .imglinkfix {
-      border-radius: 10px;
-      width: 20%;
-      height: auto;
-    }
-    .centered {
-      text-align: center;
-    }
-    .internlinkfix {
-      font-family: "arial";
-      font-size: 20px;
-      color: #002aff;
-      text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-    }
-    h1 {
-      font-family: "monospace";
-      color: White;
-      text-shadow:  -2px 0 blue, 0 2px blue, 2px 0 red, 0 -2px red;
-    }
-    h2 {
-      color: white;
-      text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
-    }
-    p {
-      font-family: "arial";
-      font-size: 20px;
-      color: #002aff;
-      text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-    }
-    ul {
-      color: #002aff;
-      text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-    }
-  </style>
-  <h1 class = "centered"> The History of the NFL </h1>
-  <a href = "#footer"> Jump to Bottom of Page</a>
-  <br> <a class = "internlinkfix" href = "https://ca.sports.yahoo.com/nfl/standings/"> Want to see how a team is doing? Click here. </a>
+<!-- I'm not going to comment over every line saying that this is a paragraph or this is a header because that would take up more space than my actual code, so instead I placed comments where the checklist items are included and I exlained the things that would be deemed challenging like my script that uses variables. Unforntuneatly, you cannot comment inside the style block so I cannot fully detail whats going on but the syntaxes are pretty simple so I assume that you shouldn't be confused with any of the material. -->
+
+<!--Style block that covers all styles that I will be using in my website -->
+<!-- Includes: Size Image, Coloured Background, CSS Classes, Image With Borders, Coloured Text, Font Family, Font Size, RGB or Hex Colours -->
+<style>
+	body {
+  
+		background-image: url(https://ak.picdn.net/shutterstock/videos/1408948/thumb/1.jpg);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		align: middle;
+	}
+
+	.ggepfix {
+		width: 100%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		border: 3px solid black
+	}
+
+	.nfllfix {
+		width: 20%;
+		height: 90%;
+	}
+
+	.imglinkfix {
+		border-radius: 10px;
+		width: 20%;
+		height: auto;
+	}
+
+	.centered {
+		text-align: center;
+	}
+
+	.internlinkfix {
+		font-family: "arial";
+		font-size: 20px;
+		color: #002aff;
+		text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	}
+
+	h1 {
+		font-family: "monospace";
+		color: White;
+		text-shadow: -2px 0 blue, 0 2px blue, 2px 0 red, 0 -2px red;
+	}
+
+	h2 {
+		color: white;
+		text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
+	}
+
+	p {
+		font-family: "arial";
+		font-size: 20px;
+		color: black;
+		text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	}
+
+	ul {
+		color: #002aff;
+		text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	}
+</style>
+<!-- Includes: Header / CSS Class -->
+<h1 class="centered"> The History of the NFL </h1>
+<!-- Includes : Anchor Element / Link to internal section of page -->
+<a href="#footer"> Jump to Bottom of Page</a>
+<!-- Includes: Link Within a Paragraph -->
+<br> <a class = "internlinkfix" href = "https://ca.sports.yahoo.com/nfl/standings/"> Want to see how a team is doing? Click here. </a>
+
   <h2> Before the NFL </h2>
+    <!-- Image -->
     <img src ="https://i.pinimg.com/originals/9d/18/16/9d1816b79b35e9085f067fcf730c16ad.jpg" align="right">
+    <!-- Paragraph -->
   <p>
     Before the conception of the NFL,<br> Football teams were regional and often played amongst different areas of the United States. However over time, a group in Canton, Ohio (Where the current NFL Hall of Fame is located.) decided to create a league consisting of different state teams to participate in what we now know as the National Football League, this started the first era of professional football. Consisting of only five teams from Ohio, four teams from Illinois, two teams from Indiana, two teams from New York and Finally a single team from Michigan. Today, only two of these original teams still exist and thirty more teamns have been added over the course of a hundred years.
   </p>
@@ -77,6 +96,7 @@
   <p>
     With the "new" NFL's construction, three divisions of twenty-six teams were considered the first teams of this new NFL. The teams are :
   </p>
+  <!-- List -->
   <ul>
     <li>Baltimore Colts (Now the Indianapolis Colts)</li>
     <li>Miami Dolphins</li>
@@ -119,6 +139,7 @@
   </ul>
 
   <h2> The Modern-Day NFL </h2>
+  <!-- Image that is a link -->
   <a href = "https://apps.apple.com/us/app/retro-bowl/id1478902583">
     <img class = "imglinkfix"alt = "If the image has not loaded please reload your page." src = "https://img.poki.com/cdn-cgi/image/quality=78,width=600,height=600,fit=cover,g=0.5x0.5,f=auto/ee9ca3764ef4289a48a1ebf457ef605441ed1f35a0f2eb12707a70d609e53686.png" align = "right">
   </a>
@@ -129,6 +150,8 @@
   <p>
     As of today, many teams have changed their team logo to match the aesthetic of the league and their opponents style of logo. In this dropdown box, you can see the evolution of each teams NFL Logo. (Note: This is slightly outdated, some logos have changed in the past year)
   </p>
+
+  <!-- This is the only complicated thing so I'll really explain this one. Whats happening is that I start with just a blank image on the screen called imagetoswap, the user selects a team in the dropdown box which would then change the image to swap using variables and a script I modified from online. This contains the variables for the checklist  -->
   <img id="imageToSwap" src="" />
 
 <br/><br/>
@@ -181,8 +204,31 @@ function swapImage(){
 <p>
   Below is a survey that I will request you to fill out to give me some information about the general football populace.
 </p>
+<!-- This survey includes the final parts of the checklist being Radio Buttons, Submit Buttons, Checklist Buttons, Form Element -->
 <form action = "https://docs.google.com/document/d/1Y8SGoYlt4p1_xtAwcEeMHr6s-OahP50le3m2N7KQcc0/edit">
-  <input type="text" placeholder = "Enter your Name"
+  <input type="text" placeholder = "Enter your Name">
+
+  <br><br><p> Which part was most interesting?</p>
+  <label for Before The NFL><input id = "Before The NFL" type = "radio" name = "Q1" value = "Before The NFL">Before The NFL</label>
+  <br><label for The Greatest Game Ever Played><input id = "The Greatest Game Ever Played" type = "radio" name = "Q1" value = "The Greatest Game Ever Played">The Greatest Game Ever Played</label>
+  <br><label for The NFL vs AFL><input id = "The NFL vs AFL" type = "radio" name = "Q1" value = "The NFL vs AFL">The NFL vs AFL</label>
+  <br><label for The New NFL><input id = "The New NFL" type = "radio" name = "Q1" value = "The New NFL">The New NFL</label>
+  <br><label for The Modern Day NFL><input id = "The Modern Day NFL" type = "radio" name = "Q1" value = "The Modern Day NFL">The Modern Day NFL</label>
+
+  <br><br><p> On a Scale of Ten, Rate this Website (select two for .5) </p>
+
+  <label for 1><input type = "checkbox" id = "1" name = "1" value = "1">1</label>
+  <label for 2><input type = "checkbox" id = "2" name = "2" value = "2">2</label>
+  <label for 3><input type = "checkbox" id = "3" name = "3" value = "3">3</label>
+  <label for 4><input type = "checkbox" id = "4" name = "4" value = "4">4</label>
+  <label for 5><input type = "checkbox" id = "5" name = "5" value = "5">5</label>
+  <label for 6><input type = "checkbox" id = "6" name = "6" value = "6">6</label>
+  <label for 7><input type = "checkbox" id = "7" name = "7" value = "7">7</label>
+  <label for 8><input type = "checkbox" id = "8" name = "8" value = "8">8</label>
+  <label for 9><input type = "checkbox" id = "9" name = "9" value = "9">9</label>
+  <label for 10><input type = "checkbox" id = "10" name = "10" value = "10">10</label>
+  
+  <br><br><button type = "submit">Submit</button>
 </form>
 
   <footer id = "footer"> <p class = "centered"> Website Made by Ethan Boxall </p> </footer>
