@@ -14,13 +14,25 @@
       height: auto;
       margin-left: auto;
       margin-right: auto;
+      border: 3px solid black
     }
     .nfllfix {
       width: 20%;
       height: 90%;
     }
+    .imglinkfix {
+      border-radius: 10px;
+      width: 20%;
+      height: auto;
+    }
     .centered {
       text-align: center;
+    }
+    .internlinkfix {
+      font-family: "arial";
+      font-size: 20px;
+      color: #002aff;
+      text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     }
     h1 {
       font-family: "monospace";
@@ -43,6 +55,8 @@
     }
   </style>
   <h1 class = "centered"> The History of the NFL </h1>
+  <a href = "#footer"> Jump to Bottom of Page</a>
+  <br> <a class = "internlinkfix" href = "https://ca.sports.yahoo.com/nfl/standings/"> Want to see how a team is doing? Click here. </a>
   <h2> Before the NFL </h2>
     <img src ="https://i.pinimg.com/originals/9d/18/16/9d1816b79b35e9085f067fcf730c16ad.jpg" align="right">
   <p>
@@ -91,4 +105,83 @@
     <li>Atlanta Falcons </li>
     <li>New Orleans Saints </li>
   </ul>
+
+  <p>
+    These teams were considered the first teams of this new NFL, and six more would be added later on over the years. Bringing the total amount of teams to the thirty-two. The teams that were added are: 
+  </p>
+  <ul>
+    <li> Seattle Seahawks </li>
+    <li> Tampa Bay Buccaneers </li>
+    <li> Carolina Panthers </li>
+    <li> Jacksonville Jaguars </li>
+    <li> Baltimore Ravens </li>
+    <li> Houston Texans </li>
+  </ul>
+
+  <h2> The Modern-Day NFL </h2>
+  <a href = "https://apps.apple.com/us/app/retro-bowl/id1478902583">
+    <img class = "imglinkfix"alt = "If the image has not loaded please reload your page." src = "https://img.poki.com/cdn-cgi/image/quality=78,width=600,height=600,fit=cover,g=0.5x0.5,f=auto/ee9ca3764ef4289a48a1ebf457ef605441ed1f35a0f2eb12707a70d609e53686.png" align = "right">
+  </a>
+  <p>
+    Today, The NFL has a large influence over North-America, being one of the most popular sports in both Canada and the United States. Many forms of media including Games, Movies and TV Shows. Click on the picture to see a mobile game based of one of the earliest football video games.
+  </p>
+
+  <p>
+    As of today, many teams have changed their team logo to match the aesthetic of the league and their opponents style of logo. In this dropdown box, you can see the evolution of each teams NFL Logo. (Note: This is slightly outdated, some logos have changed in the past year)
+  </p>
+  <img id="imageToSwap" src="" />
+
+<br/><br/>
+
+<select id="dlist" onChange="swapImage()">
+<option value="">Select Image</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/Arizona_Cardinals.jpg">Arizona Cardinals</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/Atlanta_Falcons.jpg">Atlanta Falcons</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/Baltimore_Ravens.jpg">Baltimore Ravens</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/Buffalo_Bills.jpg">Buffalo Bills</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/Carolina_Panthers.jpg">Carolina Panthers</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/Chicago_Bears.jpg">Chicago Bears</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/Cincinnati_Bengals.jpg">Cinncinati Bengals</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/Cleveland_Browns.jpg">Cleveland Bowns</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/Dallas_Cowboys.jpg">Dallas Cowboys</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/Denver_Broncos.jpg">Denver Broncos</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/Detroit_Lions.jpg">Detroit Lions</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/GreenBay_Packers.jpg">Green Bay Packers</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/Houston_Texans.jpg">Houston Texans</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/Indianapolis_Colts.jpg">Indianapolis Colts</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/Jacksonville_Jaguars.jpg">Jacksonville Jaguars</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/KansasCity_Chiefs.jpg">Kansas City Chiefs</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/SanDiego_Chargers.jpg">Los Angeles Chargers</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/StLouis_Rams.jpg">Los Angeles Rams</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/Miami_Dolphins.png">Miami Dolphins</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/Minnesota_Vikings.jpg">Minnesota Vikings</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/NewEngland_Patriots.jpg">New England Patriots</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/NewOrleans_Saints.jpg">New Orleans Saints</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/NewYork_Giants.jpg">New York Giants</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/NewYork_Jets.jpg">New York Jets</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/Oakland_Raiders.jpg">Oakland Raiders</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/Philadelphia_Eagles.jpg">Philadelphia Eagles</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/Pittsburgh_Steelers.jpg">Pittsburgh Steelers</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/SanFrancisco_49ers.jpg">San Francisco 49ers</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/Seattle_Seahawks.jpg">Seattle Seahawks</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/TampaBay_Buccaneers.jpg">Tampa Bay Buccaneers</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/Tennessee_Titans.jpg">Tennessee Titans</option>
+<option value="https://summitsoft.com/wp-content/uploads/2016/07/Washington_Redskins.jpg">Washington Redskins</option>
+</select>
+
+<script type="text/javascript">
+function swapImage(){
+	var image = document.getElementById("imageToSwap");
+	var dropd = document.getElementById("dlist");
+	image.src = dropd.value;	
+};
+</script>
+
+<h2> Website Survey </h2>
+<p>
+  Below is a survey that I will request you to fill out to give me some information about the general football populace.
+</p>
+
+
+  <footer id = "footer"> <p class = "centered"> Website Made by Ethan Boxall </p> </footer>
 </html>
